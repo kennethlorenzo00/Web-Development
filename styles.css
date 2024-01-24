@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;700&family=Bitter:ital,wght@0,400;0,700;1,400;1,700&family=Chivo:wght@400;700&display=swap');
+
+body {
+  font-family: 'Josefin Slab', serif;
+  background-color: #EEF5FF;
+  color: #176B87;
+  font-size: 18px; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bitter', serif;
+  color: #86B6F6;
+  font-size: 24px; 
+  text-align: center; 
+  padding: 20px; 
+  background-color: #B4D4FF; 
+  border-radius: 10px; 
+  margin-bottom: 20px; 
+}
+
+.input-container {
+  background-color: #B4D4FF;
+  border-radius: 20px; 
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.form-container {
+  width: 60%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #86B6F6;
+  border-radius: 20px; 
+  background-color: #EEF5FF;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0px 6px 6px rgba(0,0,0,0.23); 
+}
+
+input[type=text], input[type=email], input[type=number], input[type=date], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #176B87;
+  border-radius: 20px; 
+  box-sizing: border-box;
+  font-size: 16px; 
+}
+
+input[type=checkbox], input[type=radio] {
+  transform: scale(1.5);
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #86B6F6;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 20px; 
+  cursor: pointer;
+  font-size: 18px; 
+}
+
+input[type=submit]:hover {
+  background-color: #176B87;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #B4D4FF;
+    color: #001219;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+
+  h2 {
+    font-family: 'Bitter', serif;
+    color: #86B6F6;
+    font-size: 36px; 
+    text-align: center;
+    padding: 20px;
+    background-color: #B4D4FF; 
+    border-radius: 10px;
+    margin-bottom: 20px; 
+    text-shadow: 2px 2px #176B87;
+    transition: all 0.3s ease; 
+  }
+  
+  h2:hover {
+    transform: scale(1.1); 
+    text-shadow: 4px 4px #176B87; 
+  }
+
+  body {
+    transition: background 1s ease;
+  }
+  
+  body:hover {
+    background-color: #86B6F6;
+  }
+  
+  input[type=submit] {
+    transition: background 0.5s ease;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #EEF5FF;
+  }
+  
+  h2 {
+    animation: color-change 2s infinite;
+  }
+  
+  @keyframes color-change {
+    0% { color: #86B6F6; }
+    50% { color: #B4D4FF; }
+    100% { color: #86B6F6; }
+  }

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>WebDev Activity</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://apis.google.com/js/api.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+
+    <div class="form-container">
+       <h2>Student Engagement Form</h2>
+       <iframe name="iframe" style="position: absolute; visibility: hidden"></iframe>
+
+       <form id="form1" method="POST" action="https://script.google.com/macros/s/AKfycbyBrqJ--8T_KOssqKu77pY5SeEjKRttrsEqO_LH1iiDWBdgxRNJ5qdiqfLa7_WsxWg/exec" target="iframe">
+                <div class="input-container">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                </div>
+                
+                <div class="input-container">
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                </div>
+                
+                <div class="input-container">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                </div>
+                
+                <div class="input-container">
+                    <label for="age">Age:</label><br>
+                    <input type="number" id="age" name="age"><br>
+                </div>
+                
+                <div class="input-container">
+                    <label for="birthday">Birthday:</label><br>
+                    <input type="date" id="birthday" name="birthday"><br>
+                </div>
+                
+                <div class="input-container">
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password"><br>
+                </div>
+                
+                <p>Interests:</p>
+                <div class="input-container">
+                    <input type="checkbox" id="interest1" name="interest1" value="Music">
+                    <label for="interest1"> Music</label><br>
+                </div>
+                <div class="input-container">
+                    <input type="checkbox" id="interest2" name="interest2" value="Sports">
+                    <label for="interest2"> Sports</label><br>
+                </div>
+                <div class="input-container">
+                    <input type="checkbox" id="interest3" name="interest3" value="Travel">
+                    <label for="interest3"> Travel</label><br>
+                </div>
+
+                <label for="gender">Gender:</label><br>
+                <div class="input-container">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                </div>
+                <div class="input-container">
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                </div>
+  
+                <input type="submit" value="Submit" onclick="submitForm()">
+            </form>
+    </div>
+<footer>
+    <p>Name: Christian Kenneth A. Lorenzo</p>
+    <p>Course, Year and Section: BSIT 3-5</p>
+</footer>
+</body>
+</html>
