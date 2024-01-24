@@ -5,12 +5,13 @@ function submitForm() {
     var isAgeValid = /^[0-9]+$/.test(document.getElementById("age").value.trim());
 
     var areAllFieldsFilled = Array.from(form.elements).every(function (element) {
-        if (element.tagName.toLowerCase() === 'select') {
+        if (element.type === 'checkbox') {
+            return true; 
+        } else if (element.type === 'radio') {
+            return document.querySelector('input[name="' + element.name + '"]:checked'); 
+        } else {
             return element.value.trim() !== '';
-        } else if (element.type !== 'text') {
-            return true;
         }
-        return element.value.trim() !== '';
     });
 
     if (areAllFieldsFilled && isEmailValid && isAgeValid) {
@@ -19,7 +20,7 @@ function submitForm() {
             form.submit();
             var message = 'Form is submitted successfully!'
             alert(message);
-            //delete
+            form.reset();
         }
     } else {
         var errorMessages = ["Please correct the following errors before submitting:"];
